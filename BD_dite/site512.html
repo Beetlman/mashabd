@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="icon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>пазлы пазлы</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="matrix"></canvas>
+  
+  <div class="center-container">
+    <h1>puzzles</h1>
+    <form id="passwordForm" onsubmit="checkPassword(event)">
+      <input type="password" class="password-input" id="password" placeholder="password">
+      <br>
+      <button type="submit" class="submit-button">let me in</button>
+    </form>
+  </div>
+
+  <!-- Draggable images container -->
+  <div class="image-container">
+    <img src="1.png" alt="Image 1" class="draggable" id="image1">
+    <img src="2.png" alt="Image 2" class="draggable" id="image2">
+    <img src="3.png" alt="Image 3" class="draggable" id="image3">
+    <img src="4.png" alt="Image 4" class="draggable" id="image4">
+  </div>
+  
+  <script src="matrix.js"></script>
+  <script src="script.js"></script>
+  <script>
+    function checkPassword(event) {
+      event.preventDefault();
+      var password = document.getElementById('password').value;
+      if (password.toLowerCase() === 'dupa') { // Updated to allow case insensitive check
+        window.location.href = 'site202.html';
+      } else {
+        alert('неа');
+      }
+    }
+  </script>
+</body>
+</html>

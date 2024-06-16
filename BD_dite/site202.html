@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="icon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>витнесс</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="matrix"></canvas>
+  
+  <div class="center-container">
+    <img src="witness this.png" alt="witness" class="piss" id="image1">
+    <h1>the witness</h1>
+    <form id="passwordForm" onsubmit="checkPassword(event)">
+      <input type="text" class="password-input" id="password" placeholder="password">
+      <br>
+      <button type="submit" class="submit-button">let me in</button>
+    </form>
+  </div>
+
+  <script src="matrix.js"></script>
+  <script>
+    function checkPassword(event) {
+      event.preventDefault();
+      var password = document.getElementById('password').value.toLowerCase(); // Convert input to lowercase
+
+      // Convert expected passwords to lowercase for comparison
+      var password1 = 'rruluurdrdd'.toLowerCase();
+      var password2 = 'rruluurddrd'.toLowerCase();
+
+      if (password === password1 || password === password2) {
+        window.location.href = 'site69.html';
+      } else {
+        alert('неа');
+      }
+    }
+</script>
+  </script>
+</body>
+</html>

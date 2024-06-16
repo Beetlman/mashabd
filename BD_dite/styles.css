@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'trojan';
+    src: url('trajanpro-regular-webfont.woff2') format('woff2'), /* Modern Browsers */
+         url('trajanpro-regular-webfont.woff') format('woff'); /* Older Browsers */
+
+    /* Add additional formats if needed */
+  }
+  
+  .image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allows clicking through to canvas */
+
+}
+
+.draggable {
+    position: absolute;
+    width: 175px; /* Assuming original width was 150px */
+    height: auto;
+    cursor: grab;
+    pointer-events: auto; /* Allows interaction with images */
+    user-select: none;
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: black;
+  }
+  
+  #matrix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* Ensure canvas does not capture mouse events */
+  }
+  
+  .center-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1; /* Ensure content is above the canvas */
+  }
+  
+  h1 {
+    color: rgb(234, 202, 241);
+    font-family: 'trojan', sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+    text-transform: none; /* Ensure no text transformation */
+    user-select: none;
+  }
+  .piss{
+    text-align: center;
+    padding: 8px;
+    width: 275px;
+    
+
+  }
+  .password-input {
+    padding: 8px;
+    font-size: 16px;
+
+    border: 1px solid #190035;
+    background-color: rgb(230, 211, 235);
+    color: #190035;
+    border-radius: 4px;
+    margin-bottom: 10px;
+
+  }
+  .password-input::placeholder {
+    font-family: 'trojan';
+    color: #5e5e5e; /* Change placeholder color here */
+  }
+  .submit-button {
+    font-family: 'trojan';
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #7a3eac;
+    color: rgb(12, 0, 16);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #64338b;
+  }
+  
