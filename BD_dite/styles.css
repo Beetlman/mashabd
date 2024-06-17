@@ -15,7 +15,10 @@
     pointer-events: none; /* Allows clicking through to canvas */
 
 }
-
+.gifgif{
+    opacity: 0;
+    animation: fadeIn 3s forwards; /* Adjust duration as needed */
+}
 .draggable {
     position: absolute;
     width: 175px; /* Assuming original width was 150px */
