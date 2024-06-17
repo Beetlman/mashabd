@@ -19,6 +19,11 @@
     opacity: 0;
     animation: fadeIn 3s forwards; /* Adjust duration as needed */
 }
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
 .draggable {
     position: absolute;
     width: 175px; /* Assuming original width was 150px */
